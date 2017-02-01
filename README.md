@@ -6,9 +6,14 @@ This project has been refactored in the rails-style, one of several competing th
 
 Modifications to the original project include: porting to create-react-app, abstracting selector functions to their own file so that knowledge of the state tree is contained within the reducers directory, and installing Semantic-UI as an NPM module as opposed to maintaining a 'vendor' directory.
 
-Further information regarding Redux architecture:  
+Further information regarding Redux architecture:
+
 http://redux.js.org/docs/faq/CodeStructure.html
+
 https://github.com/erikras/ducks-modular-redux
+
 https://medium.com/@scbarrus/the-ducks-file-structure-for-redux-d63c41b7035c#.clknw0y4e
+
 https://www.fullstackreact.com/articles/better-redux-module-management/
+
 https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44#.2arg33yzz
