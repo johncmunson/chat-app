@@ -1,0 +1,14 @@
+This project is adapted from a chapter in the book Fullstack React, in which you learn the fundamentals of Redux/React by building a chat application.
+
+However, in the book the entire app is essentially built inside of one monolithic file, with little instruction as to how you would actually structure a production quality app powered by Redux.
+
+This project has been refactored in the rails-style, one of several competing theories on how to structure a Redux/React app. There are concerns in the community that this architecture scales poorly, but it is more than adequate for small to medium projects and is the easiest for beginners to learn.
+
+Modifications to the original project include: porting to create-react-app, abstracting selector functions to their own file so that knowledge of the state tree is contained within the reducers directory, and installing Semantic-UI as an NPM module as opposed to maintaining a 'vendor' directory.
+
+Further information regarding Redux architecture:  
+http://redux.js.org/docs/faq/CodeStructure.html
+https://github.com/erikras/ducks-modular-redux
+https://medium.com/@scbarrus/the-ducks-file-structure-for-redux-d63c41b7035c#.clknw0y4e
+https://www.fullstackreact.com/articles/better-redux-module-management/
+https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44#.2arg33yzz
