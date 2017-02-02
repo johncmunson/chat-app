@@ -26,4 +26,5 @@ https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-692504
 - *Add the ability to add/delete threads*
 - *Add styled-components, remove semantic-ui*
 - *Create a new branch demonstrating ducks architecture*
+- *Link to a working demo*
 - *Add a backend? Add sockets.io?*
