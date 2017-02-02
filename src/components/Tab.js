@@ -1,12 +1,13 @@
 import React from 'react'
 
-const Tab = ({ tab, index, onClick }) => (
+const Tab = ({ tab, index, onTitleClick }) => (
     <div
       key={index}
       className={tab.active ? 'active item' : 'item'}
-      onClick={() => onClick(tab.id)}
     >
-      {tab.title}
+      <div onClick={() => onTitleClick(tab.id)}>
+        {tab.title}
+      </div>
     </div>
 );
 

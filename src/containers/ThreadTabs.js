@@ -11,7 +11,7 @@ const mapStateToTabsProps = (state) => (
 
 const mapDispatchToTabsProps = (dispatch) => (
   {
-    onClick: (id) => (
+    onTitleClick: (id) => (
       dispatch(openThread(id))
     ),
   }

@@ -6,7 +6,7 @@ const Tabs = (props) => (
     <i className="fa fa-plus" style={{marginTop: 15, marginRight: 10, marginLeft: 5}}></i>
     {
       props.tabs.map((tab, index) => (
-        <Tab tab={tab} index={index} onClick={props.onClick}/>
+        <Tab tab={tab} index={index} onTitleClick={props.onTitleClick}/>
       ))
     }
   </div>
