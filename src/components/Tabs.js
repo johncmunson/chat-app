@@ -3,6 +3,7 @@ import Tab from './Tab.js'
 
 const Tabs = (props) => (
   <div className='ui top attached tabular menu'>
+    <i className="fa fa-plus" style={{marginTop: 15, marginRight: 10, marginLeft: 5}}></i>
     {
       props.tabs.map((tab, index) => (
         <Tab tab={tab} index={index} onClick={props.onClick}/>
@@ -12,11 +13,3 @@ const Tabs = (props) => (
 );
 
 export default Tabs;
-
-// <div
-//   key={index}
-//   className={tab.active ? 'active item' : 'item'}
-//   onClick={() => props.onClick(tab.id)}
-// >
-//   {tab.title}
-// </div>
