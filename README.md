@@ -1,5 +1,8 @@
 ## Chat App
 
+Demo:  
+https://johncmunson.github.io/chat-app/
+
 This project is adapted from a chapter in the book Fullstack React, in which you learn the fundamentals of React and Redux by building a chat application.
 
 However, in the book the entire app is essentially built inside of one monolithic file, with little instruction as to how you would actually structure a production quality app powered by Redux.
