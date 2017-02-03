@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import Modal from '../components/Modal.js'
-import toggleModal from '../actions/toggleModal.js'
+import closeModal from '../actions/openModal.js'
+import addThread from '../actions/addThread.js'
 
 const mapStateToModalProps = (state) => (
     {
@@ -10,9 +11,10 @@ const mapStateToModalProps = (state) => (
 
 const mapDispatchToModalProps = (dispatch) => (
   {
-    handleClick: () => (
-      dispatch(toggleModal())
-    )
+    handleClick: (id, title) => {
+      dispatch(closeModal());
+      dispatch(addThread(id, title));
+    }
   }
 );
 

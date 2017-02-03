@@ -4,9 +4,9 @@ import threadsReducer from './threadsReducer.js'
 import modalReducer from './modalReducer.js'
 
 const rootReducer = combineReducers({
-  activeThreadId: activeThreadIdReducer,
-  threads: threadsReducer,
-  modalActive: modalReducer
+    activeThreadId: activeThreadIdReducer,
+    threads: threadsReducer,
+    modalActive: modalReducer
 });
 
 export default rootReducer;

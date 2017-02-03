@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import Tabs from '../components/Tabs.js'
 import openThread from '../actions/openThread.js'
-import toggleModal from '../actions/toggleModal.js'
+import openModal from '../actions/openModal.js'
 import { getTabs } from '../reducers/selectors.js'
 
 const mapStateToTabsProps = (state) => (
@@ -16,7 +16,7 @@ const mapDispatchToTabsProps = (dispatch) => (
       dispatch(openThread(id))
     ),
     handlePlusClick: () => (
-        dispatch(toggleModal())
+        dispatch(openModal())
     )
   }
 );
