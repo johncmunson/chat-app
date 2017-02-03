@@ -12,7 +12,7 @@ const Tabs = (props) => (
     </i>
     {
       props.tabs.map((tab) => (
-        <Tab key={uuid.v4()} tab={tab} onClick={props.handleTitleClick}/>
+        <Tab key={uuid.v4()} tab={tab} onTitleClick={props.handleTitleClick} onXClick={props.handleXClick} />
       ))
     }
   </div>

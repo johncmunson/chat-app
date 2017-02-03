@@ -58,6 +58,15 @@ export default function threadsReducer(state = [
             }
             return state.concat(newThread);
         }
+        case 'DELETE_THREAD': {
+            const threadIndex = state.findIndex((t) => t.id === action.id);
+            return [
+                ...state.slice(0, threadIndex),
+                ...state.slice(
+                  threadIndex + 1, state.length
+                ),
+            ];
+        }
         default: {
             return state;
         }
