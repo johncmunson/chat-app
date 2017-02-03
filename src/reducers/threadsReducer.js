@@ -27,6 +27,7 @@ export default function threadsReducer(state = [
   {
     id: '2-be91',
     title: 'Michael Collins',
+    // Setting the first argument to undefined means that we are allowing messagesReducer the opportunity to set the initial state
     messages: messagesReducer(undefined, {}),
   },
 ], action) {
