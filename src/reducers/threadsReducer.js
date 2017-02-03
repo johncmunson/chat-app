@@ -21,7 +21,7 @@ function findThreadIndex(threads, action) {
 export default function threadsReducer(state = [
     {
         id: '1-fca2',
-        title: 'Buzz Aldrin',
+        title: 'Buzz Lightyear',
         messages: messagesReducer([{
           text: 'To infinity and beyond!',
           timestamp: Date.now(),
