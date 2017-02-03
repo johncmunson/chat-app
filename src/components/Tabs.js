@@ -17,7 +17,7 @@ const Tabs = (props) => (
     }
     {
       props.tabs.map((tab) => (
-        <Tab key={uuid.v4()} tab={tab} onTitleClick={props.handleTitleClick} onXClick={props.handleXClick} />
+        <Tab key={uuid.v4()} tab={tab} onTitleClick={props.handleTitleClick} onXClick={props.handleXClick} renderX={props.numTabs === 1 ? false : true}/>
       ))
     }
   </div>
