@@ -35,7 +35,10 @@ https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-692504
 - *~~Add the ability to add/delete threads~~*
 - *Add styled-components, remove semantic-ui*
 - *Create a new branch demonstrating ducks architecture*
-- *Add a feature that demonstrates doing async stuff with Redux (i.e. redux-thunk)
+- *Add a feature that demonstrates doing async stuff with Redux (i.e. axios, fetch, redux-thunk)*
+- *Add a feature that demonstrates react-router usage*
+- *Login/auth*
 - *~~Add 'rage-mode' to text inputs~~*
 - *~~Link to a working demo~~*
-- *Add a backend? Add sockets.io?*
+- *Persist messages with a backend database*
+- *sockets.io*
