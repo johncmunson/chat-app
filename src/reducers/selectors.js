@@ -13,3 +13,7 @@ export function getTabs(state) {
         }
     ))
 }
+
+export function getNumTabs(state) {
+    return state.threads.length;
+}

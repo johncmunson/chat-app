@@ -4,12 +4,17 @@ import uuid from 'uuid'
 
 const Tabs = (props) => (
   <div className='ui top attached tabular menu'>
-    <i
-      className="fa fa-plus"
-      style={{marginTop: 15, marginRight: 10, marginLeft: 5}}
-      onClick={() => props.handlePlusClick()}
-    >
-    </i>
+    {
+        props.numTabs === 4 ?
+            <div></div>
+            :
+            <i
+              className="fa fa-plus"
+              style={{marginTop: 15, marginRight: 10, marginLeft: 5}}
+              onClick={() => props.handlePlusClick()}
+            >
+            </i>
+    }
     {
       props.tabs.map((tab) => (
         <Tab key={uuid.v4()} tab={tab} onTitleClick={props.handleTitleClick} onXClick={props.handleXClick} />
