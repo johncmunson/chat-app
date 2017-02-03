@@ -17,6 +17,7 @@ const Modal = (props) => {
               <input
                 ref={node => input = node}
                 type='text'
+                maxLength='12'
               >
               </input>
               <button
