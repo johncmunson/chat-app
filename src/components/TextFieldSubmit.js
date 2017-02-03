@@ -9,6 +9,7 @@ const TextFieldSubmit = (props) => {
             <input
               ref={node => input = node}
               type='text'
+              maxLength='24'
             >
             </input>
         </RagePower>
