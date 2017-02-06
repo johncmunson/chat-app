@@ -18,10 +18,11 @@ export function getNumTabs(state) {
     return state.threads.length;
 }
 
-export function getUsers(state) {
+export function getData(state) {
     return state.threads.map(t => (
         {
-            title: t.title
+            x: t.title,
+            y: t.messages.length
         }
     ))
 }

@@ -1,6 +1,7 @@
 import React from 'react'
-import ConnectedUsersList from '../containers/ConnectedUsersList.js'
+//import ConnectedUsersList from '../containers/ConnectedUsersList.js'
 import NewThreadModal from '../containers/NewThreadModal.js'
+import ConnectedPieChart from '../containers/ConnectedPieChart.js'
 
 const UsersView = () => (
     <div
@@ -9,7 +10,7 @@ const UsersView = () => (
       }}
       className='ui segment'
     >
-      <ConnectedUsersList />
+      <ConnectedPieChart />
       <NewThreadModal />
     </div>
 );
