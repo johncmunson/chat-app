@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Modal from '../components/Modal.js'
-import closeModal from '../actions/openModal.js'
+import closeModal from '../actions/closeModal.js'
 import addThread from '../actions/addThread.js'
 
 const mapStateToModalProps = (state) => (

@@ -9,9 +9,9 @@ const Tabs = (props) => (
             <div></div>
             :
             <i
-              className="fa fa-plus"
+              className="fa fa-bars"
               style={{marginTop: 15, marginRight: 10, marginLeft: 5}}
-              onClick={() => props.handlePlusClick()}
+              onClick={() => props.handleBurgerClick()}
             >
             </i>
     }

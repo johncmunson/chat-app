@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import Tabs from '../components/Tabs.js'
 import openThread from '../actions/openThread.js'
 import deleteThread from '../actions/deleteThread.js'
-import openModal from '../actions/openModal.js'
+import openSidebar from '../actions/openSidebar.js'
 import { getTabs, getNumTabs } from '../reducers/selectors.js'
 
 const mapStateToTabsProps = (state) => (
@@ -15,20 +15,20 @@ const mapStateToTabsProps = (state) => (
 const mapDispatchToTabsProps = (dispatch) => (
   {
     handleTitleClick: (id) => (
-      dispatch(openThread(id))
+        dispatch(openThread(id))
     ),
     handleXClick: (id) => (
         dispatch(deleteThread(id))
     ),
-    handlePlusClick: () => (
-        dispatch(openModal())
+    handleBurgerClick: () => (
+        dispatch(openSidebar())
     )
   }
 );
 
 const ThreadTabs = connect(
-  mapStateToTabsProps,
-  mapDispatchToTabsProps
+    mapStateToTabsProps,
+    mapDispatchToTabsProps
 )(Tabs);
 
 export default ThreadTabs;
