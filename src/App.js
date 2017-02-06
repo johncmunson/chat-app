@@ -11,8 +11,8 @@ const App = () => (
     <Router>
         <div>
             <ConnectedSidebarLeft>
-                <Route exact path='/' component={ChatView} />
-                <Route path='/hello' component={Hello} />
+                <Route exact path='/chat-app' component={ChatView} />
+                <Route path='/chat-app/hello' component={Hello} />
             </ConnectedSidebarLeft>
         </div>
     </Router>
