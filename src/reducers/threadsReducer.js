@@ -22,11 +22,11 @@ export default function threadsReducer(state = [
     {
         id: '1-fca2',
         title: 'Buzz Lightyear',
-        messages: messagesReducer([{
+        messages: [{
           text: 'To infinity and beyond!',
           timestamp: Date.now(),
           id: '453-2sd09-ad23',
-        }], {})
+        }]
     },
     {
         id: '2-be91',
