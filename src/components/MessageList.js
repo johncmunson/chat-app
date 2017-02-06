@@ -1,4 +1,5 @@
 import React from 'react'
+import uuid from 'uuid'
 
 const MessageList = (props) => (
   <div className='ui comments'>
@@ -6,7 +7,7 @@ const MessageList = (props) => (
       props.messages.map((m, index) => (
         <div
           className='comment'
-          key={index}
+          key={uuid.v4()}
           onClick={() => props.onClick(m.id)}
         >
           <div className='text'>
