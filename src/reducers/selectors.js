@@ -17,3 +17,11 @@ export function getTabs(state) {
 export function getNumTabs(state) {
     return state.threads.length;
 }
+
+export function getUsers(state) {
+    return state.threads.map(t => (
+        {
+            title: t.title
+        }
+    ))
+}

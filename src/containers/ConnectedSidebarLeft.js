@@ -17,6 +17,9 @@ const mapDispatchToSidebarProps = (dispatch) => (
     handleUsersClick: () => {
         dispatch(openModal());
         dispatch(closeSidebar());
+    },
+    handleListClick: () => {
+        dispatch(closeSidebar());
     }
   }
 );
