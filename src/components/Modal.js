@@ -6,12 +6,25 @@ import uuid from 'uuid'
 //   return React.cloneElement(child, { foo: true })
 // });
 
+const modalStyles = {
+    overlay: {
+        opacity: '30'
+    },
+    content: {
+        marginLeft: '500',
+        marginTop: '120',
+        width: '350',
+        height: '80'
+    }
+}
+
 const Modal = (props) => {
     let input;
     return (
         <ReactModal
             isOpen={props.isOpen}
             contentLabel="New Thread Modal"
+            style={modalStyles}
         >
             <div className='ui input'>
               <input
