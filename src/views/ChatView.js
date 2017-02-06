@@ -4,7 +4,12 @@ import ThreadDisplay from '../containers/ThreadDisplay.js'
 import NewThreadModal from '../containers/NewThreadModal.js'
 
 const ChatView = () => (
-    <div className='ui segment'>
+    <div
+      style={{
+        backgroundColor: 'papayawhip'
+      }}
+      className='ui segment'
+    >
       <ThreadTabs />
       <ThreadDisplay />
       <NewThreadModal />

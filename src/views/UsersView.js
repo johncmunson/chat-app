@@ -3,7 +3,12 @@ import ConnectedUsersList from '../containers/ConnectedUsersList.js'
 import NewThreadModal from '../containers/NewThreadModal.js'
 
 const UsersView = () => (
-    <div className='ui segment'>
+    <div
+      style={{
+        backgroundColor: 'papayawhip'
+      }}
+      className='ui segment'
+    >
       <ConnectedUsersList />
       <NewThreadModal />
     </div>
