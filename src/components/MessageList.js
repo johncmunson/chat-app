@@ -12,7 +12,7 @@ const MessageList = (props) => (
         >
           <div className='text'>
             {m.text}
-            <span className='metadata'>@{m.timestamp}</span>
+            <span className='metadata'>...{m.timestamp}</span>
           </div>
         </div>
       ))

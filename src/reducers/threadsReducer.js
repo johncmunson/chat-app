@@ -1,4 +1,5 @@
 import messagesReducer from './messagesReducer'
+import moment from 'moment'
 
 function findThreadIndex(threads, action) {
   switch (action.type) {
@@ -24,13 +25,13 @@ export default function threadsReducer(state = [
         title: 'Buzz Lightyear',
         messages: [{
           text: 'To infinity and beyond!',
-          timestamp: Date.now(),
+          timestamp: moment(Date.now()).fromNow(),
           id: '453-2sd09-ad23',
         }]
     },
     {
         id: '2-be91',
-        title: 'Michael Collins',
+        title: 'Chuck Norris',
         // Setting the first argument to undefined means that we are allowing messagesReducer the opportunity to set the initial state
         messages: messagesReducer(undefined, {})
     },
